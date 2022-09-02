@@ -24,7 +24,7 @@ const ExperienciesContent = () => {
 
             <section>
                 <div className="container">
-                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3" id="experiences" data-aos="fade-up" data-aos-duration="1000">
+                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3 widthComponent" id="experiences" data-aos="fade-up" data-aos-duration="1000">
                         <img className="w-96" src="/img/title-experiences.png" alt="Titulo da seção de experiências, representado por um pergaminho" />
                     </div>
                     <div className="shadow-lg 2xl:mx-[0px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px]" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">

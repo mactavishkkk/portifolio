@@ -24,11 +24,11 @@ const TechnologiesContent = () => {
 
             <section>
                 <div className="container">
-                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3" id="technologies" data-aos="fade-up" data-aos-duration="1500">
+                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3 widthComponent" id="technologies" data-aos="fade-up" data-aos-duration="1500">
                         <img className="w-96" src="/img/title-technologies.png" alt="Titulo da seção de tecnologias, representado por um pergaminho" />
                     </div>
 
-                    <div className="2xl:mx-[0px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] flex justify-around flex-wrap">
+                    <div className="2xl:mx-[0px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] flex justify-around flex-wrap cardsComponent">
                         <div data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="50">
                             <img className="w-20 mx-5 mb-10" src="/icons-img/html5-icon.png" alt="Ícone simbolizando a tecnologia HTML5" />
                         </div>

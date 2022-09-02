@@ -32,12 +32,12 @@ const ProjectsContent = () => {
 
             <section>
                 <div className="container">
-                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3" id="projects" data-aos="fade-up" data-aos-duration="1500">
+                    <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3 widthComponent" id="projects" data-aos="fade-up" data-aos-duration="1500">
                         <img className="w-96" src="/img/title-projects.png" alt="Titulo da seção de projetos, representado por um pergaminho" />
                     </div>
 
 
-                    <div className="2xl:mx-[0px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] grid grid-cols-3 gap-4">
+                    <div className="2xl:mx-[0px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] grid grid-cols-3 gap-4 cardsComponent" id="projects">
                         {/* Item 1 */}
                         <div className="border-4 w-auto h-auto border-gray-500 rounded col-span-2 ... zoom-lg" data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="50">
                             <a href="https://deploy-space-x-clone.vercel.app/" rel="noreferrer" target="_blank">
