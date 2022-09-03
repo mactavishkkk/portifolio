@@ -1,6 +1,6 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition } from '@headlessui/react';
 import {
     MenuIcon,
     XIcon,
@@ -63,6 +63,7 @@ export default function Example() {
                                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
                             </Popover.Button>
                         </div>
+                        
 
                         <Popover.Group as="nav" className="hidden md:flex space-x-10">
                             <a href="#experiences" className="text-base font-medium text-gray-500 hover:text-gray-900 font-mono ...">
