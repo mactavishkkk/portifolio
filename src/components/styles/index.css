@@ -369,7 +369,7 @@
 
     .experiencesComponent {
         font-size: 14px;
-        width: 200px;
+        width: auto;
         text-align: justify;
         margin: 20px;
     }

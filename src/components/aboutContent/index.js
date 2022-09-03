@@ -27,7 +27,7 @@ const AboutContent = () => {
                     <div className="2xl:mx-[350px] xl:mx-[350px] md:mx-[250px] sm:mx-[-150px] divComponent" data-aos="fade-in" data-aos-duration="2500" data-aos-delay="200">
                         <p className="text-center lg:text-sm md:text-xs sm:text-xs font-mono ... subpixel-antialiased ... mb-3 shadow-lg text-justify">
                             Formado no nível técnico em tecnologia da informação, após mais ou menos 1 ano de experiência na área de suporte e infraestrutura foi quando descobrir o incrivel mundo do desenvolvimento. Desde então essa paixão foi se 'desenvolvendo' e foi ai que decidir migrar.
-                            Atualmente com 8 meses de experiência em algumas tecnologias de base, pude trabalhar em atividades e projetos que envolveram a tecnologia, a pesquisa e a ciência, afim de conseguir minha primeira oportunidade na área venho me desenvolvendo em tecnologias JavaScript como: React, NodeJS e junto a isso alguns banco de dados SQL.
+                            Atualmente com 8 meses de experiência em algumas tecnologias, pude trabalhar em atividades e projetos que envolveram a tecnologia, a pesquisa e a ciência. Também venho me desenvolvendo em tecnologias JavaScript, como: React, NodeJS e junto a isso alguns banco de dados SQL.
                         </p>
                     </div>
                 </div>
