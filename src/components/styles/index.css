@@ -153,6 +153,7 @@
     .bambu17 {
         display: none;
     }
+
     .bambu18 {
         display: none;
     }
@@ -330,52 +331,57 @@
 
 @media (max-width: 640px) {
 
-    p{
+    p {
         width: 500px;
         margin-right: 130px;
     }
 
-    h1{
+    h1 {
         width: 500px
     }
 }
 
 @media (max-width: 425px) {
-
     p{
-        font-size: 14px;
-        width: 400px;
-        text-align: justify;
+        width: 370px;
     }
 
     h1{
-        width: 500px
+        width: 350px
     }
 
-    .divComponent{
+    .divComponent {
         margin: 20px;
     }
 
-    .widthComponent{
+    .widthComponent {
         display: flex;
         justify-content: center;
         flex-direction: column;
         margin-left: 50px;
+        width: 300px;
+    }
+
+    .cardsComponent {
+        margin: 20px;
         width: 350px;
     }
 
-    .cardsComponent{
-        width: 450px;
+    .experiencesComponent {
+        font-size: 14px;
+        width: 200px;
+        text-align: justify;
+        margin: 20px;
     }
 
-    .formationComponent{
+    .formationComponent {
         font-size: 14px;
         width: 400px;
         text-align: justify;
         margin: 20px;
     }
 
-    .footerComponent{
+    .footerComponent {
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -385,28 +391,50 @@
 }
 
 @media (max-width: 320px) {
-
     p{
-        width: 500px;
-        margin-right: 130px;
+        width: 300px;
     }
 
     h1{
-        width: 500px
+        width: 300px
     }
 
-    .widthComponent{
+    .divComponent {
+        margin: 20px;
+    }
+
+    .widthComponent {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        width: 220px;
+        margin-left: 50px;
+        width: 210px;
     }
 
-    .cardsComponent{
-        width: 500px;
+    .cardsComponent {
+        margin: 20px;
+        width: 240px;
     }
 
-    .footerComponent{
-        width: 800px;
+    .experiencesComponent {
+        font-size: 14px;
+        width: 200px;
+        text-align: justify;
+        margin: 20px;
+    }
+
+    .formationComponent {
+        font-size: 14px;
+        width: 300px;
+        text-align: justify;
+        margin: 20px;
+    }
+
+    .footerComponent {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
     }
 }
