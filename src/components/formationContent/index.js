@@ -10,19 +10,6 @@ const FormationContent = () => {
     return (
         <Fragment>
             <section>
-                <div className="2xl:mt-[170px] xl:mt-[110px] lg:mt-[5px]">
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu06" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu07" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu08" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                </div>
-                <div className="flex justify-end">
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu06" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu07" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu08" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                </div>
-            </section>
-
-            <section>
                 <div className="">
                     <div className="flex justify-center mb-32 2xl:mb-32 xl:mb-32 lg:mb-3 md:mb-3 widthComponent" id="formation" data-aos="fade-up" data-aos-duration="1000">
                         <img className="w-96" src="/img/title-formation.png" alt="Titulo da seção de formação, representado por um pergaminho" />

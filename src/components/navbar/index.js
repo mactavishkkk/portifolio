@@ -42,14 +42,6 @@ export default function Example() {
     return (
         <header>
             <Popover className="relative bg-white">
-                <section>
-                    <div>
-                        <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    </div>
-                    <div className="flex justify-end">
-                        <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    </div>
-                </section>
                 <div className="max-w-2xl mx-auto px-4 sm:px-6">
                     <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
                         <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -63,7 +55,7 @@ export default function Example() {
                                 <MenuIcon className="h-6 w-6" aria-hidden="true" />
                             </Popover.Button>
                         </div>
-                        
+
 
                         <Popover.Group as="nav" className="hidden md:flex space-x-10">
                             <a href="#experiences" className="text-base font-medium text-gray-500 hover:text-gray-900 font-mono ...">

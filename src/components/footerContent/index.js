@@ -10,19 +10,8 @@ const FooterContent = () => {
     return (
         <Fragment>
             <section>
-                <div className="2xl:mt-44 xl:mt-6">
-                    <img className="mx-1.5 2xl:w-96 xl:w-96 md:w-[330px] absolute bambu19" src="/img/footer-bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                    <img className="mx-1.5 2xl:w-96 xl:w-96 md:w-[330px] absolute bambu20" src="/img/footer-bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                </div>
-                <div className="flex justify-end">
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu19" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu20" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                </div>
-            </section>
-
-            <section>
                 <div className="">
-                    <div className="2xl:mx-[50px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] flex justify-center widthComponent" id="width" data-aos="flip-left" data-aos-duration="1000">
+                    <div className="2xl:mx-[50px] xl:mx-[0px] md:mx-[-120px] sm:mx-[-150px] flex justify-center widthComponent" id="width">
                         <img className="mt-24 mb-24 h-96 w-auto" src="/img/logo.png" alt="Identidade digital como uma espécie de logo marca adjunto das outras opções do menu." />
                     </div>
                 </div>

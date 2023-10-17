@@ -10,16 +10,6 @@ const AboutContent = () => {
     return (
         <Fragment>
             <section>
-                <div>
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu01" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu02" src="/img/bambu.png" alt="Cartoon de um bambu com algumas folhas na lateral esquerda da página" />
-                </div>
-                <div className="flex justify-end">
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu01" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                    <img className="2xl:w-96 xl:w-96 md:w-[330px] absolute bambu02" src="/img/bambu-right.png" alt="Cartoon de um bambu com algumas folhas na lateral da página" />
-                </div>
-            </section>
-            <section>
                 <div className="">
                     <div className="flex justify-center widthComponent" data-aos="fade-up" data-aos-duration="1000">
                         <img className="w-96" src="/img/title-about-me.png" alt="Título da seção com a imagem de um pergaminho oriental no centro da página" />
