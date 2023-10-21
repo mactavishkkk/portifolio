@@ -5,18 +5,28 @@ function Summary() {
     return (
         <Section>
             <TitleDiv>
-                <Title> {'<---'} Hello world {'--->'}</Title>
+                <Title>About me</Title>
             </TitleDiv>
             <SummaryDiv>
                 <Paragraph>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, tempora unde magni praesentium cupiditate nemo fuga atque nostrum sequi soluta harum.
-                    Quis sint aspernatur excepturi quos. Reiciendis beatae sequi laudantium quisquam, dolorem et quae quaerat eum ratione ut, itaque voluptatibus eius, magni doloremque
-                    aliquid officia expedita dolore delectus ea vel?
+                    Olá, me chamo Isaías Leite, sou desenvolvedor de softwares a mais de 1 ano. Ao longo desse tempo pude participar de projetos acadêmicos
+                    onde desenvolvi o senso de trabalho em equipe, a pesquisa e a ciência. Também tive a oportunidade de participar de hackathons e
+                    projetos voluntários em minha cidade natal.
                 </Paragraph>
                 <Paragraph>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, tempora unde magni praesentium cupiditate nemo fuga atque nostrum sequi soluta harum.
-                    Quis sint aspernatur excepturi quos. Reiciendis beatae sequi laudantium quisquam, dolorem et quae quaerat eum ratione ut, itaque voluptatibus eius, magni doloremque
-                    aliquid officia expedita dolore delectus ea vel?
+                    Atualmente trabalho com: <b>PHP</b>, <b>JavaScript</b>, bancos de dados relacionais, <b>APIs Rest</b>, testes unitários,
+                    metodologias <b>ágeis</b> e algumas outras tecnologias do ecossistema das mesmas.
+                </Paragraph>
+                <Paragraph>
+                    Hoje possuo sólidas experiências em frameworks e bibliotecas como: <b>Laravel</b>, <b>Zend</b>, <b>PHPUnit</b>, <b>Reactjs</b>,
+                    <b>React-Native</b>, <b>Styled-Components</b>, <b>Bootstrap</b>, <b>Tailwind</b>, dentre outras.
+                </Paragraph>
+                <Paragraph>
+                    Assim como as boas práticas da metodologia ágil e do Devops como: Scrum, Kanban, Git e Docker.
+                </Paragraph>
+                <Paragraph>
+                    Estou sempre em busca de aprender cada vez mais e mais. No tempo livre gosto de ler livros técnicos assim como estudar algoritmos, problemas
+                    de lógica, estruturas de dados e linguagens fortemente tipadas. Atualmente estou desenvolvendo tudo isso nas linguages C, C# e Java.
                 </Paragraph>
             </SummaryDiv>
         </Section>

@@ -13,6 +13,7 @@ export const TitleDiv = styled.div`
 export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
+    font-weight: bold;
 `;
 
 export const SummaryDiv = styled.div`

@@ -6,6 +6,7 @@ import Summary from "./Sections/Summary";
 import Experience from "./Sections/Experience";
 import Formation from "./Sections/Formation";
 import Technologies from "./Sections/Technologies";
+import SideBar from "./Sections/Sidebar";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Experience />
         <Formation />
         <Technologies />
+        <SideBar />
       </Content>
     </Container>
   );

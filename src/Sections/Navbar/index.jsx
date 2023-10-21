@@ -6,13 +6,13 @@ function NavBar() {
         <Header>
             <NavBarDiv>
                 <NavBarItem>
-                    <Title>item</Title>
+                    <Title>home</Title>
                 </NavBarItem>
                 <NavBarItem>
-                    <Title>item 1</Title>
+                    <Title>challengers</Title>
                 </NavBarItem>
                 <NavBarItem>
-                    <Title>item 2</Title>
+                    <Title>projects</Title>
                 </NavBarItem>
             </NavBarDiv>
         </Header>

@@ -13,6 +13,7 @@ export const TitleDiv = styled.div`
 export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
+    font-weight: bold;
 `;
 
 export const Paragraph = styled.p`
@@ -27,6 +28,12 @@ export const TechnologiesDiv = styled.div`
   grid-gap: 0.5rem;
   margin: 0.62rem;
   margin-top: 3.43rem;
+
+  @media (min-width: 1920px) {
+    & {
+        grid-template-columns: repeat(4, 1fr);
+    }
+  }
 `;
 
 export const BoxDiv = styled.div`

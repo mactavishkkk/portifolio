@@ -13,6 +13,7 @@ export const TitleDiv = styled.div`
 export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
+    font-weight: bold;
 `;
 
 export const Paragraph = styled.p`
@@ -29,6 +30,7 @@ export const ExperienceDiv = styled.div`
 export const BoxTitle = styled.h1`
     font-size: 1.65rem;
     color: #FFFFFF;
+    font-weight: bold;
 `;
 
 export const BoxSubtitle = styled.p`

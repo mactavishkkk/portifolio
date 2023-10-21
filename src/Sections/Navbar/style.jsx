@@ -15,4 +15,9 @@ export const NavBarItem = styled.span`
     margin: 2.18rem 0.6rem 0.6rem 1.87rem;
     cursor: pointer;
     color: #FFFFFF;
+    transition: box-shadow 0.1s, transform 0.1s;
+
+    &:hover {
+        transform: scale(1.05);
+      }
 `;

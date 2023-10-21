@@ -1,7 +1,7 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg';
 
-const TechIcon = ({iconUrl}) => {
+const TechIcon = ({ iconUrl }) => {
     return (
         <ReactSVG
             src={iconUrl}
@@ -10,7 +10,6 @@ const TechIcon = ({iconUrl}) => {
                 svg.setAttribute('height', '3rem');
                 svg.querySelector('path').setAttribute('fill', '#ffff');
             }}
-            wrapper="span"
         />
     );
 };
