@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Content } from "./Style";
 
-import NavBar from "./Sections/Navbar";
+import NavBar from "./components/Navbar";
 import Summary from "./Sections/Summary";
 import Experience from "./Sections/Experience";
 import Formation from "./Sections/Formation";
 import Technologies from "./Sections/Technologies";
-import SideBar from "./Sections/Sidebar";
+import SideBar from "./components/Sidebar";
 
 function App() {
   return (
@@ -17,8 +17,8 @@ function App() {
         <Experience />
         <Formation />
         <Technologies />
-        <SideBar />
       </Content>
+      <SideBar />
     </Container>
   );
 }
