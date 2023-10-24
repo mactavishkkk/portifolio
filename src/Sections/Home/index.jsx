@@ -9,6 +9,8 @@ import Technologies from "./Technologies";
 import SideBar from "../../components/Sidebar";
 
 function Home() {
+    document.title = "Portifolio - home";
+
     return (
         <Container>
             <Content>

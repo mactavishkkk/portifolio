@@ -16,12 +16,6 @@ export const Title = styled.h1`
     font-weight: bold;
 `;
 
-export const Paragraph = styled.p`
-margin: 0.62rem;
-font-size: 1.18rem;
-color: #FFFFFF;
-`;
-
 export const FormationDiv = styled.div`
     margin: 0.62rem;    
     margin-top: 3.43rem;
@@ -37,11 +31,5 @@ export const BoxTitle = styled.h1`
 export const BoxSubtitle = styled.p`
     color: #FFFFFF;
     margin-top: -0.50rem;
-    text-align: right;
-`;
-
-export const BoxText = styled.p`
-    color: #FFFFFF;
-    margin-top: 0.50rem;
     text-align: right;
 `;

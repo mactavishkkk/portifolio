@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph, Section, ExperienceDiv, Title, TitleDiv, BoxTitle, BoxSubtitle, BoxText } from "./style";
+import { Section, ExperienceDiv, Title, TitleDiv, BoxTitle, BoxSubtitle, BoxText } from "./style";
 
 function Experience() {
     const experiencias = [

@@ -16,12 +16,6 @@ export const Title = styled.h1`
     font-weight: bold;
 `;
 
-export const Paragraph = styled.p`
-margin: 0.62rem;
-font-size: 1.18rem;
-color: #FFFFFF;
-`;
-
 export const ExperienceDiv = styled.div`
     margin: 0.62rem;
     margin-top: 3.43rem;

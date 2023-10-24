@@ -4,6 +4,8 @@ import NavBar from "../../components/Navbar";
 import SideBar from "../../components/Sidebar";
 
 function Challengers() {
+    document.title = "Portifolio - challengers";
+
     return (
         <Container>
             <Content>

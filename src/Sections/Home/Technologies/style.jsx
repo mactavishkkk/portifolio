@@ -16,12 +16,6 @@ export const Title = styled.h1`
     font-weight: bold;
 `;
 
-export const Paragraph = styled.p`
-margin: 0.62rem;
-font-size: 1.18rem;
-color: #FFFFFF;
-`;
-
 export const TechnologiesDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,11 +62,5 @@ export const BoxSubtitle = styled.p`
     font-size: 0.9rem;
     color: #FFFFFF;
     margin-top: 0.15rem;
-    text-align: left;
-`;
-
-export const BoxText = styled.p`
-    color: #FFFFFF;
-    margin-top: 0.50rem;
     text-align: left;
 `;

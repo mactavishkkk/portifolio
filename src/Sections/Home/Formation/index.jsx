@@ -1,5 +1,5 @@
 import React from "react";
-import { Paragraph, Section, FormationDiv, Title, TitleDiv, BoxTitle, BoxSubtitle, BoxText } from "./style";
+import { Section, FormationDiv, Title, TitleDiv, BoxTitle, BoxSubtitle } from "./style";
 
 function Formation() {
     const formacoes = [
