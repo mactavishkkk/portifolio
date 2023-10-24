@@ -1,6 +1,6 @@
 import React from "react";
 import { Paragraph, Section, TechnologiesDiv, Title, TitleDiv, BoxTitle, BoxSubtitle, BoxText, BoxDiv, BoxDivContent } from "./style";
-import TechIcon from "../../components/TechIcon";
+import TechIcon from "../../../components/TechIcon";
 
 function Technologies() {
     const stacks = [

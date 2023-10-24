@@ -1,18 +1,25 @@
 import React from "react";
 import { Header, NavBarDiv, NavBarItem, Title } from "./style";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
         <Header>
             <NavBarDiv>
                 <NavBarItem>
-                    <Title>home</Title>
+                    <Link to="/">
+                        <Title>home</Title>
+                    </Link>
                 </NavBarItem>
                 <NavBarItem>
-                    <Title>challengers</Title>
+                    <Link to="/challengers">
+                        <Title>challengers</Title>
+                    </Link>
                 </NavBarItem>
                 <NavBarItem>
-                    <Title>projects</Title>
+                    <Link to="/projects">
+                        <Title>projects</Title>
+                    </Link>
                 </NavBarItem>
             </NavBarDiv>
         </Header>

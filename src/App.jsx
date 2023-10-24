@@ -1,25 +1,19 @@
 import React from "react";
-import { Container, Content } from "./Style";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import NavBar from "./components/Navbar";
-import Summary from "./Sections/Summary";
-import Experience from "./Sections/Experience";
-import Formation from "./Sections/Formation";
-import Technologies from "./Sections/Technologies";
-import SideBar from "./components/Sidebar";
+import Home from "./Sections/Home";
+import Challengers from "./Sections/Challengers"
+import Projects from "./Sections/Projects"
 
 function App() {
   return (
-    <Container>
-      <Content>
-        <NavBar />
-        <Summary />
-        <Experience />
-        <Formation />
-        <Technologies />
-      </Content>
-      <SideBar />
-    </Container>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/challengers" element={<Challengers />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
 }
 
