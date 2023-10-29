@@ -5,6 +5,21 @@ import TechIcon from "../../../components/TechIcon";
 function Technologies() {
     const stacks = [
         {
+            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-line.svg',
+            title: 'C',
+            subtitle: 'Linguagem de programação de alto desempenho amplamente usada.',
+        },
+        {
+            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg',
+            title: 'C#',
+            subtitle: 'Linguagem de programação moderna desenvolvida pela Microsoft.',
+        },
+        {
+            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg',
+            title: 'Java',
+            subtitle: 'Linguagem de programação popular usada para desenvolvimento web e móvel.',
+        },
+        {
             icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
             title: 'JavaScript',
             subtitle: 'Linguagem de programação amplamente usada para desenvolvimento web.',
@@ -93,21 +108,6 @@ function Technologies() {
             icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg',
             title: 'Windows',
             subtitle: 'Sistema operacional amplamente utilizado desenvolvido pela Microsoft.',
-        },
-        {
-            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-line.svg',
-            title: 'C',
-            subtitle: 'Linguagem de programação de alto desempenho amplamente usada.',
-        },
-        {
-            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg',
-            title: 'C#',
-            subtitle: 'Linguagem de programação moderna desenvolvida pela Microsoft.',
-        },
-        {
-            icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-plain.svg',
-            title: 'Java',
-            subtitle: 'Linguagem de programação popular usada para desenvolvimento web e móvel.',
         },
     ];
 
