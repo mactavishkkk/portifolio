@@ -33,10 +33,13 @@ export const ProjectCardsDiv = styled.div`
 export const BoxDiv = styled.div`
   flex: 1;
   max-width: 18.75rem;
+  height: 18.75rem;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-color: #191F28;
+  background-image: url(${props => props.backgroundImage});
+  background-size: cover;
+  background-position: center;
   cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s;
 
@@ -61,11 +64,19 @@ export const BoxTitle = styled.h1`
     text-align: left;
     font-weight: bold;
 
-    cursor: pointer; // Adiciona um cursor indicando que o elemento é clicável
+    cursor: pointer;
 
     &:hover {
-        text-decoration: underline; // Adiciona sublinhado quando o mouse está sobre o elemento
+        text-decoration: underline;
     }
+`;
+
+export const MiniTitle = styled.p`
+    font-size: 0.9rem;
+    color: #9F9D9D;
+    margin-top: -0.45rem;
+    margin-bottom: 0.50rem;
+    text-align: left;
 `;
 
 export const BoxSubtitle = styled.p`
@@ -76,9 +87,43 @@ export const BoxSubtitle = styled.p`
 `;
 
 export const Front = styled.div`
-  transform: rotateY(0deg);
+flex: 1;
+  max-width: 18.75rem;
+  height: 18.75rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-image: url(${props => props.backgroundImage});
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &.flipped {
+    transform: rotateY(180deg);
+  }
 `;
 
 export const Back = styled.div`
-  transform: rotateY(180deg);
+  flex: 1;
+  max-width: 18.75rem;
+  height: 18.75rem;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: #191F28;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  & > * {
+    transform: rotateY(180deg);
+  }
 `;
