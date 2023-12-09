@@ -37,7 +37,6 @@ export const BoxDiv = styled.div`
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #191F28;
-  cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s;
 
   &:hover {
