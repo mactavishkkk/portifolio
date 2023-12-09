@@ -30,7 +30,7 @@ function Formation() {
     return (
         <Section>
             <TitleDiv>
-                <Title>Formation</Title>
+                <Title>Academic Education</Title>
             </TitleDiv>
             {formacoes.map((item, index) => (
                 <FormationDiv key={index}>
