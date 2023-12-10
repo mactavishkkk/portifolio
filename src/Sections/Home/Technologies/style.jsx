@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+      font-size: 1rem;
+  }
 `;
 
 export const TechnologiesDiv = styled.div`
@@ -26,6 +30,12 @@ export const TechnologiesDiv = styled.div`
   @media (min-width: 1920px) {
     & {
         grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 425px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;

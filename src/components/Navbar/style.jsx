@@ -5,6 +5,10 @@ export const Header = styled.header``;
 export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
+
+    @media (max-width: 425px){
+        font-size: 1rem;
+    }
 `;
 
 export const NavBarDiv = styled.div`

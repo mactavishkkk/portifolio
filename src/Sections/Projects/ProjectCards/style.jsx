@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+      font-size: 1rem;
+    }
 `;
 
 export const ProjectCardsDiv = styled.div`
@@ -26,6 +30,12 @@ export const ProjectCardsDiv = styled.div`
   @media (min-width: 1920px) {
     & {
         grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 425px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 `;
@@ -137,11 +147,19 @@ export const HighProjectsTitle = styled.h1`
   font-size: 1.65rem;
   color: #FFFFFF;
   font-weight: bold;
+
+  @media (max-width: 425px) {
+    font-size: 1.35rem;
+  }
 `;
 
 export const HighProjectsSubtitle = styled.p`
   color: #FFFFFF;
   margin-top: -0.50rem;
+
+  @media (max-width: 425px) {
+    font-size: 0.9rem;
+  }
 `;
 
 export const Anchor = styled.a`
@@ -156,6 +174,10 @@ export const Anchor = styled.a`
 export const HighProjectsText = styled.p`
   color: #FFFFFF;
   margin-top: 0.50rem;
+
+  @media (max-width: 425px) {
+    font-size: 0.8rem;
+  }
 `;
 
 

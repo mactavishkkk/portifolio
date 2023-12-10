@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
+    }
 `;
 
 export const SummaryDiv = styled.div`
@@ -24,4 +28,8 @@ export const Paragraph = styled.p`
     margin: 0.62rem;
     font-size: 1.18rem;
     color: #FFFFFF;
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
+    }
 `;
