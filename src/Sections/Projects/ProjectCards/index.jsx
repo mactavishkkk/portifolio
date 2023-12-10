@@ -50,8 +50,6 @@ function ProjectCard({ item, index }) {
 }
 
 function ProjectCards() {
-    const widthScreen = window.innerWidth;
-
     const stacks = [
         {
             image: BookStoreImage,
@@ -110,9 +108,7 @@ function ProjectCards() {
             subDescription:
                 'Logo, abaixo você pode conferir um pouco do que foi este evento.',
             embedCode:
-                '<iframe width="560" height="315" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
-            embedMobileCode:
-                '<iframe width="300" height="215" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+                '<iframe width="300" height="215" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
         },
 
     ];
@@ -140,7 +136,7 @@ function ProjectCards() {
                     <HighProjectsText>
                         {item.subDescription}
                     </HighProjectsText>
-                    <EmbedDiv dangerouslySetInnerHTML={{ __html: widthScreen <= 425 ? item.embedCode : item.embedMobileCode }} />
+                    <EmbedDiv dangerouslySetInnerHTML={{ __html: item.embedCode }} />
                 </HighProjectsDiv>
             ))}
         </Section>
