@@ -10,8 +10,13 @@ import {
     BoxDivContent,
     Front,
     Back,
-    Img,
-    MiniTitle
+    MiniTitle,
+    HighProjectsDiv,
+    HighProjectsTitle,
+    HighProjectsSubtitle,
+    Anchor,
+    HighProjectsText,
+    EmbedDiv
 } from "./style";
 
 import BookStoreImage from "../../../assets/projects-img/books-store-img.png";
@@ -45,6 +50,8 @@ function ProjectCard({ item, index }) {
 }
 
 function ProjectCards() {
+    const widthScreen = window.innerWidth;
+
     const stacks = [
         {
             image: BookStoreImage,
@@ -90,6 +97,26 @@ function ProjectCards() {
         }
     ];
 
+    const highProjects = [
+        {
+            title: 'Projeto Integrador',
+            promoter: '@Senac Amazonas',
+            promoterPage: 'https://www.linkedin.com/company/senacam/',
+            day: '26',
+            month: 'outubro',
+            year: '2021',
+            description:
+                'Os projetos integradores são uma forma dos alunos aplicarem os conhecimentos adquiridos ao longo do curso. A proposta é que os alunos proporcionem soluções para algum dos muitos problemas que envoltam a sociedade.',
+            subDescription:
+                'Logo, abaixo você pode conferir um pouco do que foi este evento.',
+            embedCode:
+                '<iframe width="560" height="315" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+            embedMobileCode:
+                '<iframe width="300" height="215" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>',
+        },
+
+    ];
+
     return (
         <Section>
             <TitleDiv>
@@ -100,6 +127,22 @@ function ProjectCards() {
                     <ProjectCard key={index} item={item} index={index} />
                 ))}
             </ProjectCardsDiv>
+            {highProjects.map((item, index) => (
+                <HighProjectsDiv key={index}>
+                    <HighProjectsTitle>{item.title}</HighProjectsTitle>
+                    <HighProjectsSubtitle>
+                        <Anchor href={item.promoterPage} target="_blank" rel="noopener noreferrer" >{item.promoter}</Anchor> - {''}
+                        {item.day} de {item.month} de {item.year}
+                    </HighProjectsSubtitle>
+                    <HighProjectsText>
+                        {item.description}
+                    </HighProjectsText>
+                    <HighProjectsText>
+                        {item.subDescription}
+                    </HighProjectsText>
+                    <EmbedDiv dangerouslySetInnerHTML={{ __html: widthScreen <= 425 ? item.embedCode : item.embedMobileCode }} />
+                </HighProjectsDiv>
+            ))}
         </Section>
     );
 }

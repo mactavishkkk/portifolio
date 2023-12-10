@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
+    }
 `;
 
 export const ExperienceDiv = styled.div`
@@ -25,6 +29,10 @@ export const BoxTitle = styled.h1`
     font-size: 1.65rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+        font-size: 1.30rem;
+    }
 `;
 
 export const BoxSubtitle = styled.p`
@@ -35,4 +43,8 @@ export const BoxSubtitle = styled.p`
 export const BoxText = styled.p`
     color: #FFFFFF;
     margin-top: 0.50rem;
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
+    }
 `;

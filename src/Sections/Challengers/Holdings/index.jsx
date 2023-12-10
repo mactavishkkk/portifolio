@@ -19,8 +19,6 @@ import FptaThree from "../../../assets/challengers/fpta-three.jpg";
 function Challengers() {
     document.title = "Portifolio - challengers";
 
-    const embedCode = '<iframe width="560" height="315" src="https://www.youtube.com/embed/4NZNhpRxmpU?si=vsfdBW8Qvk2lh4a2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>'
-
     const holdings = [
         {
             title: 'Senac Talk',

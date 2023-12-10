@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+        font-size: 1rem;
+    }
 `;
 
 export const FormationDiv = styled.div`
@@ -26,6 +30,10 @@ export const BoxTitle = styled.h1`
     color: #FFFFFF;
     text-align: right;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+        font-size: 1.35rem;
+    }
 `;
 
 export const BoxSubtitle = styled.p`

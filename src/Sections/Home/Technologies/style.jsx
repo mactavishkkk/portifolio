@@ -14,6 +14,10 @@ export const Title = styled.h1`
     font-size: 1.25rem;
     color: #FFFFFF;
     font-weight: bold;
+
+    @media (max-width: 425px) {
+      font-size: 1rem;
+  }
 `;
 
 export const TechnologiesDiv = styled.div`
@@ -28,6 +32,12 @@ export const TechnologiesDiv = styled.div`
         grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  @media (max-width: 425px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
 `;
 
 export const BoxDiv = styled.div`
@@ -37,7 +47,6 @@ export const BoxDiv = styled.div`
   padding: 1rem;
   border-radius: 0.5rem;
   background-color: #191F28;
-  cursor: pointer;
   transition: box-shadow 0.3s, transform 0.3s;
 
   &:hover {
