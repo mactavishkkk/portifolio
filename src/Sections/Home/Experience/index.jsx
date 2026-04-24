@@ -4,34 +4,44 @@ import { Section, ExperienceDiv, Title, TitleDiv, BoxTitle, BoxSubtitle, BoxText
 function Experience() {
     const experiencias = [
         {
-            company: 'SWX Hands On',
-            office: 'Líder Técnico | Desenvolvedor de software',
-            start: 'Agosto, 2022',
+            company: 'X Lab Studio',
+            office: 'Desenvolvedor de Software',
+            start: 'Setembro, 2024',
             end: 'o momento',
             years: '01',
             months: '03',
-            description: 'SWX é uma empresa que fornece serviços de tecnologia como Suporte, Infraestrutura e Desenvolvimento. Nela contribuí com alguns projetos de um órgão público chamado ADAF. Desenvolvi sólidas habilidades em: ZendFramework, Laravel, PHP, PostgreSQL, MySQL, Git, GitHub, Docker, ambientes e servidores Linux.',
-            subDescription: 'Também desenvolvi habilidades no gerenciamento de times técnicos e artefatos do modelo de negócio, como: Padronização de código, Documentações, Modelagens, Rituais ágeis e Gerenciamento de tarefas.'
+            description: 'Atuo no desenvolvimento de soluções web e mobile, contribuindo com APIs, aplicações frontend, integrações, publicações em lojas e ambientes em nuvem.',
+            subDescription: 'Competências: AWS, EC2, S3, PostgreSQL, Postman API, Git, Azure DevOps, GitLab, Azure, NestJS, React Native, React.js, Laravel, TestFlight, Apple Store e Google Play Console.'
         },
         {
-            company: 'HeyDrivers',
+            company: 'Systock',
+            office: 'Desenvolvedor de Software',
+            start: 'Setembro, 2022',
+            end: 'Julho, 2024',
+            years: '02',
+            months: '01',
+            description: 'Contribuí com o desenvolvimento e manutenção de sistemas web, trabalhando com regras de negócio, bancos relacionais, integrações, suporte técnico e melhoria contínua de funcionalidades.',
+            subDescription: 'Competências: PostgreSQL, Vue.js, SQL, JavaScript, Laravel, Symfony, JIRA, Notion, Zendesk, Ansible, Node.js, WSL, Docker e PHP.'
+        },
+        {
+            company: 'SWX Hands On',
+            office: 'Líder Técnico | Desenvolvedor de Software',
+            start: 'Setembro, 2022',
+            end: 'Julho, 2024',
+            years: '02',
+            months: '01',
+            description: 'A SWX fornece serviços de tecnologia como suporte, infraestrutura e desenvolvimento. Nela contribuí com projetos para a ADAF, atuando em APIs REST, scripts de automação, migração de dados, conteinerização, testes unitários, WebSocket, envio de emails, autenticação e manutenção de sistemas legados.',
+            subDescription: 'Também desenvolvi sólidas habilidades em ZendFramework, Laravel, .NET, PostgreSQL, MySQL, Git, GitHub, Docker, Pentaho, ambientes Linux e liderança técnica.'
+        },
+        {
+            company: 'Hey Drivers - Automotive Connectivity',
             office: 'Desenvolvedor de Software',
             start: 'Novembro, 2022',
-            end: 'o momento',
-            years: '01',
-            months: '00',
-            description: 'Hey Drivers é uma startup que nasceu com o objetivo de melhorar a experiência e a jornada dos motoristas no geral. No dia a dia, contribuindo com alguns projetos tenho contato com tecnologias como: ReacJs, React-Native, JavaScript, Git, GitHub, Docker e ambientes Linux.',
-            subDescription: 'Além disso, contribuo com reuniões semanais onde alinhamos regras de negócio, decisões técnicas e estratégias.'
-        },
-        {
-            company: 'Senac',
-            office: 'Líder de Projeto | Desenvolvedor de software',
-            start: 'Janeiro, 2022',
-            end: 'Março, 2022',
-            years: '00',
-            months: '03',
-            description: 'Atuei como líder e desenvolvedor de um projeto chamado PetsCard, um sistema web que traz como objetivo instruir o responsável por um pet a como se portar em relação a sua saúde assim como um sistema de administração para o proprietário de um pet-shop.',
-            subDescription: 'Desenvolvemos habilidades em HTML5, CSS3, JavaScript, Bootstrap, PHP, MySQL assim como boas noções em Git, GitHub e metodologias ágeis. Também tivemos a oportunidade de desenvovler artefatos de software como: Casos de Uso, Modelagens e Documentações.'
+            end: 'Abril, 2025',
+            years: '02',
+            months: '06',
+            description: 'A Hey Drivers é uma startup criada para melhorar a experiência e a jornada dos motoristas. Contribuí com projetos web e mobile usando ReactJS, React Native, Node.js, Git, GitHub, Docker e Expo Go.',
+            subDescription: 'Também participei de reuniões semanais com partes interessadas para alinhamento de funcionalidades, correções, estratégias e modelos de negócio.'
         },
     ];
 
@@ -39,7 +49,7 @@ function Experience() {
     return (
         <Section>
             <TitleDiv>
-                <Title> Expierences</Title>
+                <Title>Experiences</Title>
             </TitleDiv>
             {experiencias.map((item, index) => (
                 <ExperienceDiv key={index}>

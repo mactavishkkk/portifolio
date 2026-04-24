@@ -43,28 +43,24 @@ export const ProjectCardsDiv = styled.div`
 export const BoxDiv = styled.div`
   flex: 1;
   max-width: 18.75rem;
-  height: 18.75rem;
+  min-height: 18.75rem;
   margin: 0.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
-  background-image: url(${props => props.backgroundImage});
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+  background-color: #191F28;
   transition: box-shadow 0.3s, transform 0.3s;
 
   &:hover {
-    transform: scale(1.00);
-  }
-
-  &.flipped {
-    transform: rotateY(180deg);
+    transform: scale(1.05);
   }
 `;
 
 export const BoxDivContent = styled.div`
     flex: 1;
     margin: 0.5rem;
+    min-height: 15.75rem;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const BoxTitle = styled.h1`
@@ -94,6 +90,7 @@ export const BoxSubtitle = styled.p`
     color: #FFFFFF;
     margin-top: 0.15rem;
     text-align: left;
+    flex: 1;
 `;
 
 export const Front = styled.div`
@@ -169,6 +166,39 @@ export const Anchor = styled.a`
         transform: scale(1.05);
         color: gray;
     }
+`;
+
+export const ProjectMeta = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+`;
+
+export const ProjectLanguage = styled.span`
+  color: #FFFFFF;
+  font-size: 0.8rem;
+
+  &::before {
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    display: inline-block;
+    margin-right: 0.35rem;
+    border-radius: 50%;
+    background-color: ${props => props.corLinguagem};
+  }
+`;
+
+export const ProjectStats = styled.span`
+  color: #9F9D9D;
+  font-size: 0.8rem;
+`;
+
+export const LoadingText = styled.p`
+  color: #9F9D9D;
+  margin: 1rem 0.62rem 0 0.62rem;
+  text-align: center;
 `;
 
 export const HighProjectsText = styled.p`

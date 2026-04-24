@@ -8,13 +8,6 @@ function Formation() {
             course: 'Análise e Desenvolvimento de Sistemas',
             start: 'Abril, 2022',
             end: 'Outubro, 2024',
-            status: '4° Período',
-        },
-        {
-            company: 'OneBitCode',
-            course: 'Full Stack JavaScript Developer',
-            start: 'Junho, 2022',
-            end: 'Setembro, 2022',
             status: 'Concluído',
         },
         {

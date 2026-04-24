@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
     Section,
     ProjectCardsDiv,
@@ -8,92 +8,128 @@ import {
     BoxSubtitle,
     BoxDiv,
     BoxDivContent,
-    Front,
-    Back,
     MiniTitle,
     HighProjectsDiv,
     HighProjectsTitle,
     HighProjectsSubtitle,
     Anchor,
     HighProjectsText,
-    EmbedDiv
+    EmbedDiv,
+    ProjectMeta,
+    ProjectLanguage,
+    ProjectStats,
+    LoadingText
 } from "./style";
 
-import BookStoreImage from "../../../assets/projects-img/books-store-img.png";
-import CurriculumImage from "../../../assets/projects-img/curriculum-img.png";
-import KofClubImage from "../../../assets/projects-img/kof-img.png";
-import PetsCardImage from "../../../assets/projects-img/petscardweb-img.png";
-import SmallMarioImage from "../../../assets/projects-img/small-mario-img.png";
-import SpaceXImage from "../../../assets/projects-img/spacex-img.png";
-import ToDoListImage from "../../../assets/projects-img/to-do-list-img.png";
-
-function ProjectCard({ item, index }) {
-    const [isFlipped, setIsFlipped] = useState(false);
-
-    const handleClick = () => {
-        setIsFlipped(!isFlipped);
-    };
+function ProjectCard({ item }) {
+    const corLinguagem = item.languageColor || '#9F9D9D';
+    const descricao = item.description || 'Repositório fixado no perfil do GitHub.';
 
     return (
-        <BoxDiv onClick={handleClick} className={isFlipped ? 'flipped' : ''}>
+        <BoxDiv>
             <BoxDivContent>
-                <Front className={isFlipped ? 'hidden' : ''} backgroundImage={item.image}>
-                </Front>
-                <Back className={isFlipped ? '' : 'hidden'}>
-                    <BoxTitle><a href={item.repo} target="_blank" rel="noopener noreferrer">{item.title}</a></BoxTitle>
-                    <MiniTitle>clique aqui!</MiniTitle>
-                    <BoxSubtitle>{item.subtitle}</BoxSubtitle>
-                </Back>
+                <BoxTitle>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">{item.repo}</a>
+                </BoxTitle>
+                <MiniTitle>{item.owner}</MiniTitle>
+                <BoxSubtitle>{descricao}</BoxSubtitle>
+                <ProjectMeta>
+                    {item.language && (
+                        <ProjectLanguage corLinguagem={corLinguagem}>{item.language}</ProjectLanguage>
+                    )}
+                    <ProjectStats>{item.stars || 0} stars</ProjectStats>
+                    <ProjectStats>{item.forks || 0} forks</ProjectStats>
+                </ProjectMeta>
             </BoxDivContent>
         </BoxDiv>
     );
 }
 
 function ProjectCards() {
-    const stacks = [
+    const projetosFixadosFallback = [
         {
-            image: BookStoreImage,
-            title: 'book-store',
-            subtitle: 'Pequena loja de livros desenvolvida no curso de programação web do professor André Mauricio.',
-            repo: 'https://github.com/mactavishkkk/book-store'
+            owner: 'mactavishkkk',
+            repo: 'AncientBeast',
+            description: 'Turn Based Strategy Game. Master your beasts!',
+            link: 'https://github.com/mactavishkkk/AncientBeast',
+            language: 'JavaScript',
+            languageColor: '#f1e05a',
+            stars: 0,
+            forks: 0
         },
         {
-            image: CurriculumImage,
-            title: 'curriculum',
-            subtitle: 'Currículo no formato de uma página web.',
-            repo: 'https://github.com/mactavishkkk/curriculum'
+            owner: 'mactavishkkk',
+            repo: 'learn-data-structure',
+            description: 'Repositório destinado aos estudos de estruturas de dados.',
+            link: 'https://github.com/mactavishkkk/learn-data-structure',
+            language: 'C',
+            languageColor: '#555555',
+            stars: 0,
+            forks: 0
         },
         {
-            image: KofClubImage,
-            title: 'kof-club',
-            subtitle: "Um 'wikipedia' para fãs de The king of figthers, pondo em prova as tecnologias da web.",
-            repo: 'https://github.com/mactavishkkk/kof-club'
+            owner: 'mactavishkkk',
+            repo: 'boe',
+            description: 'Bemol Omnichannel Experience.',
+            link: 'https://github.com/mactavishkkk/boe',
+            language: 'PHP',
+            languageColor: '#4F5D95',
+            stars: 0,
+            forks: 0
         },
         {
-            image: PetsCardImage,
-            title: 'petsCard-web',
-            subtitle: 'Aplicação web voltada para o contexto de petshops.',
-            repo: ''
+            owner: 'mactavishkkk',
+            repo: 'SalesWeb',
+            description: 'Repositório destinado ao desenvolvimento de um sistema de vendas com ASP.NET.',
+            link: 'https://github.com/mactavishkkk/SalesWeb',
+            language: 'C#',
+            languageColor: '#178600',
+            stars: 0,
+            forks: 0
         },
         {
-            image: SmallMarioImage,
-            title: 'small-mario-world',
-            subtitle: 'Um simples game desenvolvido com as tecnologias da web com o tema do Super Mario World.',
-            repo: 'https://github.com/mactavishkkk/small-mario-world'
+            owner: 'mactavishkkk',
+            repo: 'icasei-challenge',
+            description: 'icasei-teste-backend-2024.',
+            link: 'https://github.com/mactavishkkk/icasei-challenge',
+            language: 'Ruby',
+            languageColor: '#701516',
+            stars: 0,
+            forks: 0
         },
         {
-            image: SpaceXImage,
-            title: 'deploy-spaceX-clone',
-            subtitle: 'Site baseado em uma das versões da SpaceX, desenvolvido no curso de Javascript da onebitcode.',
-            repo: 'https://github.com/mactavishkkk/deploy-spaceX-clone'
-        },
-        {
-            image: ToDoListImage,
-            title: 'to-do-list',
-            subtitle: 'Um projeto desenvolvido dentro do treinamento FSJSD.',
-            repo: 'https://github.com/mactavishkkk/to-do-list'
+            owner: 'mactavishkkk',
+            repo: 'joseph',
+            description: 'Node.js application with Express integrated with Gemini AI.',
+            link: 'https://github.com/mactavishkkk/joseph',
+            language: 'R',
+            languageColor: '#198CE7',
+            stars: 0,
+            forks: 0
         }
     ];
+
+    const [projetosFixados, setProjetosFixados] = useState(projetosFixadosFallback);
+    const [estaCarregando, setEstaCarregando] = useState(true);
+
+    useEffect(() => {
+        async function buscarProjetosFixados() {
+            try {
+                const resposta = await fetch('https://gh-pinned-repos.egoist.dev/?username=mactavishkkk');
+                const projetos = await resposta.json();
+
+                if (Array.isArray(projetos) && projetos.length > 0) {
+                    setProjetosFixados(projetos);
+                }
+            } catch (erro) {
+                console.error('Não foi possível buscar os repositórios fixados.', erro);
+            } finally {
+                setEstaCarregando(false);
+            }
+        }
+
+        buscarProjetosFixados();
+    }, []);
 
     const highProjects = [
         {
@@ -118,9 +154,12 @@ function ProjectCards() {
             <TitleDiv>
                 <Title>Setlist</Title>
             </TitleDiv>
+            {estaCarregando && (
+                <LoadingText>Buscando repositórios fixados no GitHub...</LoadingText>
+            )}
             <ProjectCardsDiv>
-                {stacks.map((item, index) => (
-                    <ProjectCard key={index} item={item} index={index} />
+                {projetosFixados.map((item, index) => (
+                    <ProjectCard key={`${item.owner}-${item.repo}-${index}`} item={item} />
                 ))}
             </ProjectCardsDiv>
             {highProjects.map((item, index) => (
